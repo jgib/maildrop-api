@@ -3,9 +3,8 @@
 use warnings;
 use LWP::Simple;
 
-while (1 eq 1) {
+while (1) {
 system("clear");
-print "Waiting for the doorbell to ring!\n";
 my $get = get("http://maildrop.cc/inbox/EMAILNAME");
 my @get = split("\n",$get);
 
